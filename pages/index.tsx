@@ -34,6 +34,7 @@ import imsgg from '../public/reading-books.png';
 import Hoos from '../components/Hoos';
 
 export default function Home() {
+  const router = useRouter();
   // const [state, setState] = useState({
   //   products: [],
   //   error: '',
@@ -82,14 +83,14 @@ export default function Home() {
 
   const isDesktop = useMediaQuery('(min-width:600px)');
 
-  const [query, setQuery] = useState('');
-  const queryChangeHandler = (e) => {
-    setQuery(e.target.value);
-  };
-  const submitHandler = (e) => {
-    e.preventDefault();
-    router.push(`/search?query=${query}`);
-  };
+  // const [query, setQuery] = useState('');
+  // const queryChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setQuery(e.target.value);
+  // };
+  // const submitHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   e.preventDefault();
+  //   router.push(`/search?query=${query}`);
+  // };
   return (
     <Layout>
       {loading ? (
@@ -123,7 +124,7 @@ export default function Home() {
               <button
                 className="button-5"
                 role="button"
-                onClick={submitHandler}
+                // onClick={submitHandler}
               >
                 See All books
               </button>
