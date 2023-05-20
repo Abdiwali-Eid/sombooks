@@ -36,7 +36,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import classes from '../utils/classes';
 
-const kor = () => {
+const Kor = () => {
   const [sidbarVisible, setSidebarVisible] = useState(false);
   const sidebarOpenHandler = () => {
     setSidebarVisible(true);
@@ -104,4 +104,4 @@ const kor = () => {
   );
 };
 
-export default kor;
+export default Kor;
