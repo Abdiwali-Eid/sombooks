@@ -22,8 +22,6 @@ import {
 } from '@mui/material';
 import { useRouter } from 'next/router';
 
-import { Typography } from '@mui/material';
-import Head from 'next/head';
 import { Alert, CircularProgress, Grid } from '@mui/material';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
