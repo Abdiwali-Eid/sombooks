@@ -1,0 +1,314 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fak {
+  background-color: cadetblue;
+}
+.tops {
+  background-color: aquamarine;
+  height: 250px;
+
+  width: 100dvw;
+}
+.ciwan {
+  padding-top: 90px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.images {
+  width: 660px;
+}
+/* CSS */
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 60%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+.qibala {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* margin-right: 13px; */
+}
+.mains {
+  width: 100%;
+  /* border-top: 60px solid rgb(240, 242, 245); */
+  /* background-color: rgb(240, 242, 245); */
+}
+.marquee-text {
+  font-size: 29px;
+  font-weight: 600;
+  margin: 60px 0px;
+  color: #f02d34;
+}
+.marquee {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.caymis {
+  margin-right: 25px;
+}
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-top: 10px;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+.bordere {
+  border-left: solid 4px rgb(240, 242, 245);
+  width: 5px;
+  margin: 4px;
+}
+
+main .nud {
+  background-color: rgb(240, 242, 245);
+  width: 98.75vw;
+}
+.author{
+  color: gray;
+  padding-top: 4px;
+}
+.nud {
+  /* background-color: rgb(248, 249, 250); */
+  /* background-color: rgb(240, 242, 245); */
+  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  background-color: rgb(240, 242, 245);
+  height: 500px;
+  display: flex;
+  padding-left: 200px;
+  /* background-color: bisque; */
+}
+.midig {
+  padding-top: 70px;
+}
+.sixid {
+  font-weight: lighter;
+  font-size: 16px;
+}
+.maylike-products-wrapper {
+  margin-top: 120px;
+}
+.maylike-products-wrapper h2 {
+  text-align: center;
+  margin: 50px;
+  color: #324d67;
+
+  font-size: 28px;
+}
+.maylike-products-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+  width: 180%;
+}
+.track:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.toos {
+  width: 400px;
+}
+.ciwan {
+  padding-top: 10px;
+}
+.wayn {
+  font-size: 40px;
+}
+.yaris {
+  margin-left: 168px;
+}
+
+.lax {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+@media (max-width: 600px) {
+  /* .qibala {
+    visibility: hidden;
+  } */
+  .nud {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding-bottom: 260px;
+
+    padding-left: 60px;
+  }
+
+  .images {
+    width: 350px;
+    padding-left: 30px;
+    margin-left: 40px;
+  }
+  .midig {
+    padding-top: 30px;
+
+    margin-right: 100px;
+  }
+  .ciwan {
+    font-size: 40px;
+    padding-right: 100px;
+  }
+  .content {
+    padding: 4rem;
+  }
+  .button-9 {
+    width: 43%;
+  }
+  .nuuro {
+    margin-right: 0px;
+    size: 200px;
+  }
+  .caymis {
+    width: 400px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+  }
+  .caymis2 {
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 320px;
+    text-align: center;
+    /* padding-right: 80px; */
+  }
+  .toos {
+    /* width: 500px; */
+    margin-top: 20px;
+    background-color: gainsboro;
+  }
+  .searchtext {
+    background-color: gainsboro;
+    width: 350px;
+    border-radius: 3px;
+    height: 40px;
+  }
+  .author{
+    color: gray;
+   font-size: 14px;
+  }
+  /* .yaris {
+
+
+ 
+  } */
+}
+
+@media (min-width: 600px) {
+  .menuicons {
+    visibility: hidden;
+  }
+}
