@@ -140,14 +140,20 @@
   .content {
     padding: 4rem;
   }
+  .caymis {
+    width: 400px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+  }
 
   .grid {
-    grid-template-columns: 1fr 2r;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
   }
- 
+
   .tops {
     background-color: blue;
   }

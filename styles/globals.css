@@ -157,7 +157,7 @@ main .nud {
   background-color: rgb(240, 242, 245);
   width: 98.75vw;
 }
-.author{
+.author {
   color: gray;
   padding-top: 4px;
 }
@@ -279,7 +279,7 @@ main .nud {
   }
 
   .grid {
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
 
     max-width: 320px;
     text-align: center;
@@ -296,9 +296,9 @@ main .nud {
     border-radius: 3px;
     height: 40px;
   }
-  .author{
+  .author {
     color: gray;
-   font-size: 14px;
+    font-size: 14px;
   }
   /* .yaris {
 

@@ -222,11 +222,11 @@ export default function Layout({ title, description, children }) {
               className="toos"
             >
               <form onSubmit={submitHandler} className="toos">
-                <Box sx={classes.searchForm}>
+                <Box sx={classes.searchForm} style={{ width: '600px' }}>
                   <InputBase
                     name="query"
                     sx={classes.searchInput}
-                    placeholder="Search products"
+                    placeholder="Search Books"
                     onChange={queryChangeHandler}
                   />
                   <IconButton
@@ -234,6 +234,7 @@ export default function Layout({ title, description, children }) {
                     sx={classes.searchButton}
                     aria-label="search"
                     className="yaris"
+                    style={{ marginLeft: '368px' }}
                   >
                     <SearchIcon />
                   </IconButton>
