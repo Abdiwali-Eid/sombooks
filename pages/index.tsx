@@ -34,7 +34,7 @@ import imsgg from '../public/reading-books.png';
 import Hoos from '../components/Hoos';
 
 export default function Home() {
-  const router = useRouter();
+
   // const [state, setState] = useState({
   //   products: [],
   //   error: '',
