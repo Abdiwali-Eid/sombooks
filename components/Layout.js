@@ -370,7 +370,7 @@ export default function Layout({ title, description, children }) {
           {/* <span style={{backgroundColor:'red'}}>runta</span> */}
         </Container>
         <Box component="footer" sx={classes.footer}>
-          <Typography>All rights reserved. Sanity Amazona.</Typography>
+          <Typography>All rights reserved. SomBooks.</Typography>
         </Box>
       </ThemeProvider>
     </>
