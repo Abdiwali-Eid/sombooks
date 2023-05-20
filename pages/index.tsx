@@ -152,16 +152,16 @@ export default function Home() {
           
 
               <Grid sx={isDesktop ? classes.visible : classes.hidden}>
-              <Grid container spacing={4} className="caymis">
+              <Grid container spacing={4} className="caymis" style={{paddingRight:'20px'}}>
                 {products.map((product) => (
-                  <Grid item md={3} key={product.slug} className="caymis2">
+                  <Grid item md={3} key={product.slug} className="caymis2" >
                     <ProductItem product={product}></ProductItem>
                   </Grid>
                 ))}
               </Grid>
               </Grid>
               <Grid sx={isDesktop ? classes.hidden : classes.visible}>
-              <Grid container spacing={4} style={{display:'grid',gridTemplateColumns:'1fr 1fr',paddingRight:'20px'}}>
+              <Grid container spacing={4} style={{display:'grid',gridTemplateColumns:'1fr 1fr',paddingRight:'20px'}} className='tablet'>
                 {products.map((product) => (
                   <Grid item md={3} key={product.slug}  >
                     <ProductItem product={product}></ProductItem>

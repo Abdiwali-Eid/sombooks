@@ -233,9 +233,6 @@ main .nud {
 }
 
 @media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
   /* .qibala {
     visibility: hidden;
   } */
@@ -306,6 +303,10 @@ main .nud {
   .bordere {
     visibility: hidden;
   }
+  main .nud {
+    background-color: rgb(240, 242, 245);
+    width: 100vw;
+  }
   /* .yaris {
 
 
@@ -316,5 +317,12 @@ main .nud {
 @media (min-width: 600px) {
   .menuicons {
     visibility: hidden;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .tablet {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
