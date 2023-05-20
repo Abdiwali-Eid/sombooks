@@ -270,10 +270,10 @@ main .nud {
     size: 200px;
   }
   .caymis {
-    width: 400px;
+    /* width: 400px;
     margin-left: 10px;
     display: grid;
-    grid-template-columns: 10fr 10fr;
+    grid-template-columns: 10fr 10fr; */
   }
   .caymis2 {
   }
@@ -299,6 +299,9 @@ main .nud {
   .author {
     color: gray;
     font-size: 14px;
+  }
+  .bordere{
+    visibility: hidden;
   }
   /* .yaris {
 

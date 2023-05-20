@@ -149,6 +149,9 @@ export default function Home() {
                 <Kor />
               </Grid>
               <div className="bordere"> </div>
+          
+
+              <Grid sx={isDesktop ? classes.visible : classes.hidden}>
               <Grid container spacing={4} className="caymis">
                 {products.map((product) => (
                   <Grid item md={3} key={product.slug} className="caymis2">
@@ -156,6 +159,23 @@ export default function Home() {
                   </Grid>
                 ))}
               </Grid>
+              </Grid>
+              <Grid sx={isDesktop ? classes.hidden : classes.visible}>
+              <Grid container spacing={4} style={{display:'grid',gridTemplateColumns:'1fr 1fr',paddingRight:'20px'}}>
+                {products.map((product) => (
+                  <Grid item md={3} key={product.slug}  >
+                    <ProductItem product={product}></ProductItem>
+                  </Grid>
+                ))}
+              </Grid>
+              </Grid>
+
+           
+           
+            
+                 
+                 
+
             </div>
           </div>
         </>
