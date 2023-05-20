@@ -232,7 +232,10 @@ main .nud {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .content {
+    padding: 4rem;
+  }
   /* .qibala {
     visibility: hidden;
   } */
@@ -300,7 +303,7 @@ main .nud {
     color: gray;
     font-size: 14px;
   }
-  .bordere{
+  .bordere {
     visibility: hidden;
   }
   /* .yaris {
