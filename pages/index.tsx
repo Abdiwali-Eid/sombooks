@@ -34,24 +34,46 @@ import imsgg from '../public/reading-books.png';
 import Hoos from '../components/Hoos';
 
 export default function Home() {
+  // const [state, setState] = useState({
+  //   products: [],
+  //   error: '',
+  //   loading: true,
+  // });
+  // const { loading, error, products } = state;
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const products = await client.fetch(`*[_type == "product"]`);
+  //       setState({products, loading: false });
+  //     } catch (err) {
+  //       setState({loading: false, error: err.message });
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
   const [state, setState] = useState({
-    products: [],
-    error: '',
+    products: null,
     loading: true,
+    error: '',
   });
-  const { loading, error, products } = state;
-  const router = useRouter();
+  const { products, loading, error } = state;
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const products = await client.fetch(`*[_type == "product"]`);
-        setState({ products, loading: false });
+        const products = await client.fetch(
+          ` *[_type == "product"]`,
+       
+        );
+        setState({ ...state, products, loading: false });
       } catch (err) {
-        setState({ loading: false, error: err.message });
+        setState({ ...state, error: err.message, loading: false });
       }
     };
     fetchData();
   }, []);
+
+
   const isDesktop = useMediaQuery('(min-width:600px)');
 
   const [query, setQuery] = useState('');
