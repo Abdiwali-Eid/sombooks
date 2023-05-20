@@ -67,7 +67,13 @@ export default function Home() {
         );
         setState({ ...state, products, loading: false });
       } catch (err) {
-        setState({ ...state, error: err.message, loading: false });
+        if (err instanceof Error) {
+          // ✅ TypeScript knows err is Error
+          setState({ ...state, error: err.message, loading: false });
+        } else {
+          console.log('Unexpected error', err);
+        }
+       
       }
     };
     fetchData();
