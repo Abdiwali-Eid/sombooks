@@ -139,7 +139,7 @@ export default function Home() {
               />
             </div>
           </Grid>
-          <div className="nuuro" style={{ width: '98.7vw' }}>
+          <div className="nuuro">
             <Grid style={{ paddingLeft: '220px', paddingTop: '30px' }}>
               <b style={{ fontSize: '20px' }}>Popular Books</b>
             </Grid>

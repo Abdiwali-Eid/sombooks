@@ -99,6 +99,10 @@ a {
 .caymis {
   margin-right: 25px;
 }
+.nuuro{
+  width:98.7vw;
+
+}
 
 /* CSS */
 .button-5 {
@@ -240,11 +244,13 @@ main .nud {
     display: grid;
     grid-template-columns: 1fr;
 
-    padding-bottom: 260px;
+    /* padding-bottom: 260px;
 
-    padding-left: 60px;
+    padding-left: 60px; */
   }
-
+  body {
+    width: 700px;
+  }
   .images {
     width: 350px;
     padding-left: 30px;
@@ -265,10 +271,10 @@ main .nud {
   .button-9 {
     width: 43%;
   }
-  .nuuro {
+  /* .nuuro {
     margin-right: 0px;
-    size: 200px;
-  }
+    width: 100%;
+  } */
   .caymis {
     /* width: 400px;
     margin-left: 10px;
@@ -320,9 +326,30 @@ main .nud {
   }
 }
 
-@media (min-width: 701px) and (max-width: 1120px) {
+/* @media (min-width: 701px) and (max-width: 1120px) {
   .tablet {
     display: grid;
     grid-template-columns: 1fr;
   }
+} */
+@media (max-width: 320px) {
+  #__next {
+    width: 320px;
+  }
+  main .nud {
+    background-color: rgb(240, 242, 245);
+    width: 320px;
+    size: 20px;
+    margin-left: 0px;
+    padding-left: 0;
+  }
+
+  .nuuro{
+    width: 700px;
+  }
+  .midig{
+    padding-top: 0;
+    margin-right: 0;
+  }
+
 }
