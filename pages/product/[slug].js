@@ -18,7 +18,7 @@ import Layout from '../../components/Layout';
 import classes from '../../utils/classes';
 import client from '../../utils/client';
 import { urlFor } from '../../utils/image';
-import Hoos from '../../components/Hoos'
+import Hoos from '../../components/Hoos';
 
 import ProductItem from '../../components/ProductItem';
 
@@ -64,10 +64,10 @@ export default function ProductScreen(props) {
       ) : error ? (
         <Alert variant="error">{error}</Alert>
       ) : (
-        <Box style={{paddingLeft:'25px'}}>
-          <Box sx={classes.section} >
+        <Box style={{ paddingLeft: '25px' }}>
+          <Box sx={classes.section}>
             <NextLink href="/" passHref>
-              <Link >
+              <Link>
                 <Typography>back to result</Typography>
               </Link>
             </NextLink>
@@ -101,10 +101,10 @@ export default function ProductScreen(props) {
                   <Typography>Description: {product.description}</Typography>
                 </ListItem>
                 <ListItem>
-                  <button fullWidth variant="contained" className='button-5'> 
-                    {product.name === 'Golf pants' ? (
+                  <button fullWidth variant="contained" className="button-5">
+                    {product.name === 'Qaamuska Afsoomaaliga' ? (
                       <a
-                        href="/files/NUUN.pdf"
+                        href="/files/QAAMUUSKA AF-SOOMAALIGA[1]-2.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -112,9 +112,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : product.name === 'Qurux' ? (
+                    ) : product.name === 'Kobocii Islaamiyiinta' ? (
                       <a
-                        href="/files/cv.pdf"
+                        href="/files/Kobocii Islaamiyiinta Soomaaliya.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -122,19 +122,29 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : product.name === 'Fit pants' ? (
+                    ) : product.name === 'Gabayadii Sayidka' ? (
                       <a
-                        href="/files/BaylintaBuuqa-.pdf"
+                        href="/files/Diiwaanka_Gabayadii_Sayid_Maxamed_Cabdulle_Xasan.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="buy-now"
                       >
-                       Download
+                        Download
                       </a>
-                    ) : product.name === 'Shirts' ? (
+                    ) : product.name === 'Midnimo iyo muraayadii jabtay' ? (
                       <a
-                        href="/files/shahaado guud.pdf"
+                        href="/files/Midnimo, Maandeeq, iyo Muraayaddii Jabtay-ebyoon (1).pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'SOO DOOG' ? (
+                      <a
+                        href="/files/Soodoog-garanuug.com.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -209,7 +219,7 @@ export default function ProductScreen(props) {
               </Grid>
             ))}
           </Grid> */}
-          <Hoos/>
+          <Hoos />
         </Box>
       )}
     </Layout>

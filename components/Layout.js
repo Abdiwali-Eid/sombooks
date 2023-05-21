@@ -37,6 +37,7 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
+import Footer from './Footer';
 
 export default function Layout({ title, description, children }) {
   const router = useRouter();
@@ -228,6 +229,7 @@ export default function Layout({ title, description, children }) {
                     sx={classes.searchInput}
                     placeholder="Search Books"
                     onChange={queryChangeHandler}
+                    // style={{ marginRight: '40px' }}
                   />
                   <IconButton
                     type="submit"
@@ -280,7 +282,7 @@ export default function Layout({ title, description, children }) {
             </Box>
           </Toolbar>
           <Box
-            style={{ backgroundColor: 'white', height: '40px' }}
+            style={{ backgroundColor: 'white', height: '48px',paddingBottom:'38px' }}
             sx={isDesktop ? classes.visible : classes.hidden}
           >
             <List>
@@ -369,9 +371,15 @@ export default function Layout({ title, description, children }) {
           {children}
           {/* <span style={{backgroundColor:'red'}}>runta</span> */}
         </Container>
-        <Box component="footer" sx={classes.footer}>
+        <Box
+          component="footer"
+          sx={classes.footer}
+          style={{ backgroundColor: 'rgb(120, 176, 232)' }}
+        >
           <Typography>All rights reserved. SomBooks.</Typography>
+          <footer />
         </Box>
+        {/* <Footer/> */}
       </ThemeProvider>
     </>
   );

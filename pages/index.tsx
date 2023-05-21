@@ -34,7 +34,7 @@ import imsgg from '../public/reading-books.png';
 import Hoos from '../components/Hoos';
 
 export default function Home() {
-
+  const router = useRouter();
   // const [state, setState] = useState({
   //   products: [],
   //   error: '',
@@ -62,10 +62,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const products = await client.fetch(
-          ` *[_type == "product"]`,
-       
-        );
+        const products = await client.fetch(` *[_type == "product"]`);
         setState({ ...state, products, loading: false });
       } catch (err) {
         if (err instanceof Error) {
@@ -74,23 +71,21 @@ export default function Home() {
         } else {
           console.log('Unexpected error', err);
         }
-       
       }
     };
     fetchData();
   }, []);
 
-
   const isDesktop = useMediaQuery('(min-width:600px)');
 
-  // const [query, setQuery] = useState('');
-  // const queryChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   setQuery(e.target.value);
-  // };
-  // const submitHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   e.preventDefault();
-  //   router.push(`/search?query=${query}`);
-  // };
+  const [query, setQuery] = useState('');
+  const queryChangeHandler = (e) => {
+    setQuery(e.target.value);
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    router.push(`/search?query=${query}`);
+  };
   return (
     <Layout>
       {loading ? (
@@ -124,7 +119,7 @@ export default function Home() {
               <button
                 className="button-5"
                 role="button"
-                // onClick={submitHandler}
+                onClick={submitHandler}
               >
                 See All books
               </button>
@@ -149,33 +144,39 @@ export default function Home() {
                 <Kor />
               </Grid>
               <div className="bordere"> </div>
-          
 
               <Grid sx={isDesktop ? classes.visible : classes.hidden}>
-              <Grid container spacing={4} className="caymis" style={{paddingRight:'20px'}}>
-                {products.map((product) => (
-                  <Grid item md={3} key={product.slug} className="caymis2" >
-                    <ProductItem product={product}></ProductItem>
-                  </Grid>
-                ))}
-              </Grid>
+                <Grid
+                  container
+                  spacing={4}
+                  className="caymis"
+                  style={{ paddingRight: '20px' }}
+                >
+                  {products.map((product) => (
+                    <Grid item md={3} key={product.slug} className="caymis2">
+                      <ProductItem product={product}></ProductItem>
+                    </Grid>
+                  ))}
+                </Grid>
               </Grid>
               <Grid sx={isDesktop ? classes.hidden : classes.visible}>
-              <Grid container spacing={4} style={{display:'grid',gridTemplateColumns:'1fr 1fr',paddingRight:'20px'}} className='tablet'>
-                {products.map((product) => (
-                  <Grid item md={3} key={product.slug}  >
-                    <ProductItem product={product}></ProductItem>
-                  </Grid>
-                ))}
+                <Grid
+                  container
+                  spacing={4}
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    paddingRight: '20px',
+                  }}
+                  className="tablet"
+                >
+                  {products.map((product) => (
+                    <Grid item md={3} key={product.slug}>
+                      <ProductItem product={product}></ProductItem>
+                    </Grid>
+                  ))}
+                </Grid>
               </Grid>
-              </Grid>
-
-           
-           
-            
-                 
-                 
-
             </div>
           </div>
         </>

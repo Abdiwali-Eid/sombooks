@@ -17,7 +17,7 @@ const classes = {
     textAlign: 'center',
   },
   appbar: {
-    backgroundColor: '#203040',
+    backgroundColor: 'rgb(85, 128, 170)',
     '& a': {
       color: '#ffffff',
       marginLeft: 1,
