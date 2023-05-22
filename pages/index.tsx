@@ -110,8 +110,8 @@ export default function Home() {
                 books from our library */}
               <span className="ciwan">
                 Download{' '}
-                <span style={{ color: 'rgb(85, 128, 170)' }}>PDF Books </span> 
-             Online
+                <span style={{ color: 'rgb(85, 128, 170)' }}>PDF Books</span>
+                <br /> Online{' '}
               </span>
               <br />
               start your learning journary by browsing Hundreds of books from

@@ -177,7 +177,7 @@ export default function RegisterScreen() {
             ></Controller>
           </ListItem>
           <ListItem>
-            <Button variant="contained" type="submit" fullWidth color="primary">
+            <Button variant="contained" type="submit" fullWidth color="primary" style={{backgroundColor:'rgb(85, 128, 170)'}}>
               Register
             </Button>
           </ListItem>
