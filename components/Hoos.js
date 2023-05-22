@@ -56,9 +56,14 @@ const Hoos = () => {
       <h2>You may also like</h2>
       <div className="marquee">
         <div className="maylike-products-container track">
-          {products.map((item) => (
-            <ProductItem key={item._id} product={item} />
+          {products.map((product) => (
+            <Grid item md={3} key={product.slug}>
+              <ProductItem product={product}></ProductItem>
+            </Grid>
           ))}
+          {/* {products.map((item) => (
+            <ProductItem key={item._id} product={item} />
+          ))} */}
         </div>
       </div>
     </div>

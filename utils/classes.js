@@ -63,9 +63,9 @@ const classes = {
     },
   },
   searchButton: {
-    backgroundColor: '#f8c040',
+    backgroundColor: 'rgb(85, 128, 170)',
     padding: 1,
-  
+
     borderRadius: '0 5px 5px 0',
     '& span': {
       color: '#000000',
