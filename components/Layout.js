@@ -131,7 +131,7 @@ export default function Layout({ title, description, children }) {
   return (
     <>
       <Head>
-        <title>{title ? `${title} - Sanity Amazona` : 'Sanity Amazona'}</title>
+        <title>{title ? `${title} - Som Books` : 'Som Books'}</title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
       <ThemeProvider theme={theme} className="fak">
@@ -282,7 +282,11 @@ export default function Layout({ title, description, children }) {
             </Box>
           </Toolbar>
           <Box
-            style={{ backgroundColor: 'white', height: '48px',paddingBottom:'38px' }}
+            style={{
+              backgroundColor: 'white',
+              height: '48px',
+              paddingBottom: '38px',
+            }}
             sx={isDesktop ? classes.visible : classes.hidden}
           >
             <List>
