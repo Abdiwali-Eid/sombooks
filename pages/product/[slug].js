@@ -89,8 +89,9 @@ export default function ProductScreen(props) {
                     {product.name}
                   </Typography>
                 </ListItem>
+                <ListItem>Author: {product.Author}</ListItem>
                 <ListItem>Category: {product.category}</ListItem>
-                <ListItem>Brand: {product.brand}</ListItem>
+                
                 <ListItem>
                   <Rating value={product.rating} readOnly></Rating>
                   <Typography sx={classes.smallText}>
@@ -145,6 +146,126 @@ export default function ProductScreen(props) {
                     ) : product.name === 'SOO DOOG' ? (
                       <a
                         href="/files/Soodoog-garanuug.com.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Nuun' ? (
+                      <a
+                        href="/files/NUUN.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Baylinta Buuqa' ? (
+                      <a
+                        href="/files/BaylintaBuuqa-.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Salaad baa i dhaaftay' ? (
+                      <a
+                        href="/files/Salaad baa i dhaaftay.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Garaadso intaadan Guursan' ? (
+                      <a
+                        href="/files/garaadso intaanad guursan.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Maana-faay' ? (
+                      <a
+                        href="/files/maana faay.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Dhambaalada Quraanka' ? (
+                      <a
+                        href="/files/Dhambaallada quraanka..pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Xeerka soomaalidii hore' ? (
+                      <a
+                        href="/files/Xeerkii soomaalidii hore.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Ku raaxayso noloshaada' ? (
+                      <a
+                        href="/files/KU RAAXAYSO NOLOSHADA-1.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Indho deeq ku aaway' ? (
+                      <a
+                        href="/files/Indhadeeqkuaaway.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Hal ka Haleel' ? (
+                      <a
+                        href="/files/hal ka haleel.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Hal aan tabayay' ? (
+                      <a
+                        href="/files/hal aan tabayey.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : product.name === 'Sirta iyo Axkaamta soonka' ? (
+                      <a
+                        href="/files/Sirta iyo Axkaamta Soonka-QABYO (1).pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"

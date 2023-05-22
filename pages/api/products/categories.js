@@ -4,8 +4,6 @@ const handler = nc();
 
 handler.get(async (req, res) => {
   const categories = [
-    'shirts',
-    'Pants',
     'Diin',
     'Taariikh',
     'Sheeko Faneed',

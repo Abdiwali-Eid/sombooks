@@ -109,11 +109,12 @@ export default function Home() {
                 start your learning journary by browsing millions of <br />
                 books from our library */}
               <span className="ciwan">
-                Read PDF Books
-                <br /> Online{' '}
+                Download{' '}
+                <span style={{ color: 'rgb(85, 128, 170)' }}>PDF Books </span> 
+             Online
               </span>
               <br />
-              start your learning journary by browsing millions of books from
+              start your learning journary by browsing Hundreds of books from
               our library
               <br />
               <button
