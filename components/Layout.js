@@ -146,7 +146,7 @@ export default function Layout({ title, description, children }) {
                 sx={classes.menuButton}
                 className="menuicons"
               >
-                {/* <MenuIcon sx={classes.navbarButton} /> */}
+                <MenuIcon sx={classes.navbarButton} />
               </IconButton>
 
               <NextLink href="/" passHref>
@@ -315,11 +315,13 @@ export default function Layout({ title, description, children }) {
               <Box
                 sx={classes.searchForm}
                 style={{
-                  backgroundColor: 'gray',
-                  width: '480px',
+                  // backgroundColor: 'gray',
+                  // width: '480px',
                   border: '3px',
                   marginTop: '3px',
+                  
                 }}
+                className='searchkayga'
               >
                 <InputBase
                   name="query"
@@ -332,7 +334,7 @@ export default function Layout({ title, description, children }) {
                   sx={classes.searchButton}
                   aria-label="search"
                   className="yaris"
-                  style={{ marginLeft: '249px' }}
+                  // style={{ marginLeft: '249px' }}
                 >
                   <SearchIcon />
                 </IconButton>
