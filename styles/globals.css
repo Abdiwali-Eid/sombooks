@@ -99,9 +99,8 @@ a {
 .caymis {
   margin-right: 25px;
 }
-.nuuro{
-  width:98.7vw;
-
+.nuuro {
+  width: 98.7vw;
 }
 
 /* CSS */
@@ -237,120 +236,9 @@ main .nud {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-@media (max-width: 700px) {
-  /* .qibala {
-    visibility: hidden;
-  } */
-  .nud {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    /* padding-bottom: 260px;
-
-    padding-left: 60px; */
-  }
-  body {
-    width: 700px;
-  }
-  .images {
-    width: 350px;
-    padding-left: 30px;
-    margin-left: 40px;
-  }
-  .midig {
-    padding-top: 30px;
-
-    margin-right: 100px;
-  }
-  .ciwan {
-    font-size: 40px;
-    padding-right: 100px;
-  }
-  .content {
-    padding: 4rem;
-  }
-  .button-9 {
-    width: 43%;
-  }
-  /* .nuuro {
-    margin-right: 0px;
+@media screen and (max-width: 600px) {
+  /* .Content {
     width: 100%;
+    height: 100%;
   } */
-  .caymis {
-    /* width: 400px;
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: 10fr 10fr; */
-  }
-  .caymis2 {
-  }
-
-  .grid {
-    /* grid-template-columns: 1fr 1fr; */
-
-    max-width: 320px;
-    text-align: center;
-    /* padding-right: 80px; */
-  }
-  .toos {
-    /* width: 500px; */
-    margin-top: 20px;
-    background-color: gainsboro;
-  }
-  .searchtext {
-    background-color: gainsboro;
-    width: 350px;
-    border-radius: 3px;
-    height: 40px;
-  }
-  .author {
-    color: gray;
-    font-size: 14px;
-  }
-  .bordere {
-    visibility: hidden;
-  }
-  main .nud {
-    background-color: rgb(240, 242, 245);
-    width: 100vw;
-  }
-  /* .yaris {
-
-
- 
-  } */
-}
-
-@media (min-width: 600px) {
-  .menuicons {
-    visibility: hidden;
-  }
-}
-
-/* @media (min-width: 701px) and (max-width: 1120px) {
-  .tablet {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-} */
-@media (max-width: 320px) {
-  #__next {
-    width: 320px;
-  }
-  main .nud {
-    background-color: rgb(240, 242, 245);
-    width: 320px;
-    size: 20px;
-    margin-left: 0px;
-    padding-left: 0;
-  }
-
-  .nuuro{
-    width: 700px;
-  }
-  .midig{
-    padding-top: 0;
-    margin-right: 0;
-  }
-
 }

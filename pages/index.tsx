@@ -94,6 +94,7 @@ export default function Home() {
         <Alert variant="danger">{error}</Alert>
       ) : (
         <>
+        <div className='Content'>
           <Grid
             className="nud"
             style={
@@ -172,13 +173,14 @@ export default function Home() {
                   className="tablet"
                 >
                   {products.map((product) => (
-                    <Grid item md={3} key={product.slug}>
+                    <Grid item  md={3}  key={product.slug}>
                       <ProductItem product={product}></ProductItem>
                     </Grid>
                   ))}
                 </Grid>
               </Grid>
             </div>
+          </div>
           </div>
         </>
       )}

@@ -146,7 +146,7 @@ export default function Layout({ title, description, children }) {
                 sx={classes.menuButton}
                 className="menuicons"
               >
-                <MenuIcon sx={classes.navbarButton} />
+                {/* <MenuIcon sx={classes.navbarButton} /> */}
               </IconButton>
 
               <NextLink href="/" passHref>
@@ -173,7 +173,7 @@ export default function Layout({ title, description, children }) {
                     alignItems="center"
                     justifyContent="space-between"
                   >
-                    <Typography>Shopping by category</Typography>
+                    <Typography>categories and menu</Typography>
                     <IconButton
                       aria-label="close"
                       onClick={sidebarCloseHandler}
