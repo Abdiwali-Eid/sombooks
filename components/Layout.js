@@ -315,8 +315,7 @@ export default function Layout({ title, description, children }) {
               <Box
                 sx={classes.searchForm}
                 style={{
-                  // backgroundColor: 'gray',
-                  // width: '480px',
+                 
                   border: '3px',
                   marginTop: '3px',
                   
