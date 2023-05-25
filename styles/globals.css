@@ -103,9 +103,9 @@ a {
   width: 98.7vw;
 }
 /* style={{ paddingLeft: '220px', paddingTop: '30px'  }} */
-.popular{
-padding-left: 220px;
-padding-top: 30px;
+.popular {
+  padding-left: 220px;
+  padding-top: 30px;
 }
 .button-5 {
   align-items: center;
@@ -239,13 +239,13 @@ main .nud {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-@media screen and (max-width:800px)  {
+@media screen and (max-width: 800px) {
   main .nud {
     padding-left: 6px;
     display: flex;
     flex-direction: column;
   }
-  .inputbasekayga{
+  .inputbasekayga {
     width: 260px;
   }
   .ciwan {
@@ -290,10 +290,10 @@ main .nud {
     width: 310px;
     margin-left: 5px;
   }
-  .popular{
+  .popular {
     padding-left: 5px;
   }
   .yaris {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
