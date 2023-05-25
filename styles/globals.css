@@ -245,6 +245,9 @@ main .nud {
     display: flex;
     flex-direction: column;
   }
+  .inputbasekayga{
+    width: 260px;
+  }
   .ciwan {
     font-size: 25px;
   }
@@ -291,6 +294,6 @@ main .nud {
     padding-left: 5px;
   }
   .yaris {
-    margin-left: 80px;
+    margin-left: 10px;
   }
 }
