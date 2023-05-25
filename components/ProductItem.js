@@ -22,8 +22,8 @@ export default function ProductItem({ product }) {
             image={urlForThumbnail(product.image)}
             title={product.name}
           ></CardMedia>
-          <CardContent>
-            <Typography>{product.name}</Typography>
+          <CardContent >
+            <Typography >{product.name}</Typography>
            <Typography className='author'>{product.Author}</Typography>
             {/* <Typography>
               {product.rating} ({product.numReviews} reviews)
