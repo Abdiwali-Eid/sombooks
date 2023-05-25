@@ -287,13 +287,15 @@ main .nud {
   }
   .searchkayga {
     background-color: gray;
-    width: 290px;
-    /* margin-left: 5px; */
+    width: 310px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-end;
   }
   .popular {
     padding-left: 5px;
   }
   .yaris {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
