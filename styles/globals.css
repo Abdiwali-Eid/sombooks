@@ -239,7 +239,7 @@ main .nud {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width:800px)  {
   main .nud {
     padding-left: 6px;
     display: flex;
