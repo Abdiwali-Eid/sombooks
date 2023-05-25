@@ -73,13 +73,14 @@ export default function ProductScreen(props) {
             </NextLink>
           </Box>
           <Grid container spacing={1}>
-            <Grid item md={6} xs={12}>
+            <Grid item md={6} xs={12} className='details'>
               <Image
-                src={urlFor(product.image)}
+                src={urlFor(product.image) }
                 alt={product.name}
                 layout="responsive"
                 width={640}
                 height={640}
+                className='image-buug'
               />
             </Grid>
             <Grid md={4} xs={12}>

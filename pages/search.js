@@ -9,6 +9,7 @@ import {
   Rating,
   Select,
   Typography,
+  useMediaQuery,
 } from '@mui/material';
 import { Box } from '@mui/system';
 import axios from 'axios';
@@ -162,6 +163,7 @@ export default function SearchScreen() {
     });
     router.push('/cart');
   };
+  const isDesktop = useMediaQuery('(min-width:600px)');
 
   return (
     <Layout title="search">
@@ -245,7 +247,7 @@ export default function SearchScreen() {
             ) : error ? (
               <Alert>{error}</Alert>
             ) : (
-              <Grid container spacing={3}>
+              <Grid container spacing={3}  sx={isDesktop ? classes.visible : classes.hidden}>
                 {products.map((product) => (
                   <Grid item md={4} key={product.name}>
                     <ProductItem
@@ -255,9 +257,37 @@ export default function SearchScreen() {
                   </Grid>
                 ))}
               </Grid>
+              
             )}
+            
+            {loading ? (
+              <CircularProgress />
+            ) : error ? (
+              <Alert>{error}</Alert>
+            ) : (
+              <Grid sx={isDesktop ? classes.hidden : classes.visible}>
+              <Grid container spacing={3}  
+              style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    paddingRight: '25px',
+                    marginLeft:'1px'
+                  }}>
+              {products.map((product) => (
+                <Grid item md={3} key={product.name}>
+                  <ProductItem
+                    product={product}
+                    addToCartHandler={addToCartHandler}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+            </Grid>
+            )
+                }
           </Grid>
         </Grid>
+        
       </Grid>
     </Layout>
   );
