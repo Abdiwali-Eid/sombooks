@@ -328,6 +328,7 @@ export default function Layout({ title, description, children }) {
                   placeholder="Search Books"
                   onChange={queryChangeHandler}
                   className='inputbasekayga'
+                  style={{ backgroundColor:'gray',}}
                 />
                 <IconButton
                   type="submit"
