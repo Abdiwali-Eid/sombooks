@@ -260,18 +260,18 @@ export default function SearchScreen() {
               
             )}
             
-            {loading ? (
+            {/* {loading ? (
               <CircularProgress />
             ) : error ? (
               <Alert>{error}</Alert>
             ) : (
               <Grid sx={isDesktop ? classes.hidden : classes.visible}>
-              <Grid container spacing={3}  
+              <Grid container spacing={4}  
               style={{
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr',
-                    paddingRight: '25px',
-                    marginLeft:'1px'
+                    // paddingRight: '60px',
+                    // marginLeft:'1px'
                   }}>
               {products.map((product) => (
                 <Grid item md={3} key={product.name}>
@@ -284,11 +284,39 @@ export default function SearchScreen() {
             </Grid>
             </Grid>
             )
-                }
+                } */}
           </Grid>
         </Grid>
         
       </Grid>
+      {loading ? (
+              <CircularProgress />
+            ) : error ? (
+              <Alert>{error}</Alert>
+            ) : (
+              <Grid sx={isDesktop ? classes.hidden : classes.visible}>
+              <Grid container spacing={4}  
+              style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                   paddingRight:'10px',
+                   paddingLeft:'10px'
+                  //  marginLeft:'1px'
+                  }}
+                  className="tablet"
+                  >
+              {products.map((product) => (
+                <Grid item  md={3} key={product.name}>
+                  <ProductItem
+                    product={product}
+                    // addToCartHandler={addToCartHandler}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+            </Grid>
+            )
+                }
     </Layout>
   );
 }
