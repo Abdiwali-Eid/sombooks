@@ -320,7 +320,7 @@ export default function Layout({ title, description, children }) {
               <Box
                 sx={classes.searchForm}
                 style={{
-                  backgroundColor: 'gray',
+                  backgroundColor: 'rgb(240, 242, 245)',
                   border: '3px',
                   marginTop: '3px',
                 }}
@@ -332,7 +332,7 @@ export default function Layout({ title, description, children }) {
                   placeholder="Search Books"
                   onChange={queryChangeHandler}
                   className="inputbasekayga"
-                  style={{ backgroundColor: 'gray' }}
+                  style={{ backgroundColor: 'rgb(240, 242, 245)' }}
                 />
                 <IconButton
                   type="submit"
