@@ -32,6 +32,9 @@ a {
 .images {
   width: 660px;
 }
+.menuicons {
+  visibility: hidden;
+}
 /* CSS */
 .button-9 {
   appearance: button;
@@ -301,5 +304,8 @@ main .nud {
   }
   .details {
     padding-right: 100px;
+  }
+  .menuicons {
+    visibility: visible;
   }
 }

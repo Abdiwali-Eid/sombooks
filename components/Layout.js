@@ -191,6 +191,11 @@ export default function Layout({ title, description, children }) {
                     </Link>
                   </NextLink>
                 </ListItem>
+                <ListItem onClick={sidebarCloseHandler}>
+                  <NextLink href="" onClick={submitHandler}>
+                    <Link style={{ color: 'black' }}>All books</Link>
+                  </NextLink>
+                </ListItem>
                 <ListItem>
                   <NextLink href="/">
                     <Link style={{ color: 'black' }}>About</Link>
@@ -301,7 +306,7 @@ export default function Layout({ title, description, children }) {
                 </NextLink>
 
                 <NextLink href="" onClick={submitHandler}>
-                  <Link style={{ color: 'black' }}>Book Categories</Link>
+                  <Link style={{ color: 'black' }}>About</Link>
                 </NextLink>
               </ListItem>
             </List>
@@ -315,20 +320,19 @@ export default function Layout({ title, description, children }) {
               <Box
                 sx={classes.searchForm}
                 style={{
-                 backgroundColor:'gray',
+                  backgroundColor: 'gray',
                   border: '3px',
                   marginTop: '3px',
-                  
                 }}
-                className='searchkayga'
+                className="searchkayga"
               >
                 <InputBase
                   name="query"
                   sx={classes.searchInput}
                   placeholder="Search Books"
                   onChange={queryChangeHandler}
-                  className='inputbasekayga'
-                  style={{ backgroundColor:'gray',}}
+                  className="inputbasekayga"
+                  style={{ backgroundColor: 'gray' }}
                 />
                 <IconButton
                   type="submit"

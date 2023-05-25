@@ -247,9 +247,20 @@ export default function SearchScreen() {
             ) : error ? (
               <Alert>{error}</Alert>
             ) : (
-              <Grid container spacing={3}  sx={isDesktop ? classes.visible : classes.hidden}>
+              <Grid
+                container
+                spacing={3}
+                
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 1fr 1fr',
+                  paddingRight: '10px',
+                  paddingLeft: '10px',
+                  //  marginLeft:'1px'
+                }}
+              >
                 {products.map((product) => (
-                  <Grid item md={4} key={product.name}>
+                  <Grid item md={10} key={product.name} sx={isDesktop ? classes.visible : classes.hidden}>
                     <ProductItem
                       product={product}
                       addToCartHandler={addToCartHandler}
@@ -257,9 +268,8 @@ export default function SearchScreen() {
                   </Grid>
                 ))}
               </Grid>
-              
             )}
-            
+
             {/* {loading ? (
               <CircularProgress />
             ) : error ? (
@@ -287,36 +297,36 @@ export default function SearchScreen() {
                 } */}
           </Grid>
         </Grid>
-        
       </Grid>
       {loading ? (
-              <CircularProgress />
-            ) : error ? (
-              <Alert>{error}</Alert>
-            ) : (
-              <Grid sx={isDesktop ? classes.hidden : classes.visible}>
-              <Grid container spacing={4}  
-              style={{
-                    display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
-                   paddingRight:'10px',
-                   paddingLeft:'10px'
-                  //  marginLeft:'1px'
-                  }}
-                  className="tablet"
-                  >
-              {products.map((product) => (
-                <Grid item  md={3} key={product.name}>
-                  <ProductItem
-                    product={product}
-                    // addToCartHandler={addToCartHandler}
-                  />
-                </Grid>
-              ))}
-            </Grid>
-            </Grid>
-            )
-                }
+        <CircularProgress />
+      ) : error ? (
+        <Alert>{error}</Alert>
+      ) : (
+        <Grid sx={isDesktop ? classes.hidden : classes.visible}>
+          <Grid
+            container
+            spacing={4}
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr ',
+              paddingRight: '10px',
+              paddingLeft: '10px',
+              //  marginLeft:'1px'
+            }}
+            className="tablet"
+          >
+            {products.map((product) => (
+              <Grid item md={3} key={product.name}>
+                <ProductItem
+                  product={product}
+                  // addToCartHandler={addToCartHandler}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      )}
     </Layout>
   );
 }

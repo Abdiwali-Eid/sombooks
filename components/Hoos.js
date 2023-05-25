@@ -29,7 +29,7 @@ import Layout from '../components/Layout';
 import ProductItem from '../components/ProductItem';
 import client from '../utils/client';
 import Kor from '../components/Kor';
-
+import NextLink from 'next/link';
 import classes from '../utils/classes';
 
 const Hoos = () => {
@@ -52,7 +52,7 @@ const Hoos = () => {
     fetchData();
   }, []);
   return (
-    <div className="maylike-products-wrapper">
+    <Grid className="maylike-products-wrapper">
       <h2>You may also like</h2>
       <div className="marquee">
         <div className="maylike-products-container track">
@@ -66,7 +66,8 @@ const Hoos = () => {
           ))} */}
         </div>
       </div>
-    </div>
+    </Grid>
+
     //  <div className="maylike-products-wrapper">
     //     <h2>You may also like</h2>
     //     <Grid container spacing={3} className="marquee">
