@@ -163,7 +163,7 @@ export default function SearchScreen() {
     });
     router.push('/cart');
   };
-  const isDesktop = useMediaQuery('(min-width:600px)');
+  const isDesktop = useMediaQuery('(min-width:800px)');
 
   return (
     <Layout title="search">

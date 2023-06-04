@@ -21,6 +21,7 @@ import { urlFor } from '../../utils/image';
 import Hoos from '../../components/Hoos';
 
 import ProductItem from '../../components/ProductItem';
+// import Product from '../../components/Product';
 
 export default function ProductScreen(props) {
   const { slug } = props;
@@ -28,8 +29,9 @@ export default function ProductScreen(props) {
     product: null,
     loading: true,
     error: '',
+    products: null,
   });
-  const { product, loading, error } = state;
+  const { product, loading, error, products } = state;
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -38,7 +40,9 @@ export default function ProductScreen(props) {
               *[_type == "product" && slug.current == $slug][0]`,
           { slug }
         );
-        setState({ ...state, product, loading: false });
+        const products = await client.fetch(`*[_type == "product"]`);
+
+        setState({ ...state, product, products, loading: false });
       } catch (err) {
         setState({ ...state, error: err.message, loading: false });
       }
@@ -73,14 +77,14 @@ export default function ProductScreen(props) {
             </NextLink>
           </Box>
           <Grid container spacing={1}>
-            <Grid item md={6} xs={12} className='details'>
+            <Grid item md={6} xs={12} className="details">
               <Image
-                src={urlFor(product.image) }
+                src={urlFor(product.image)}
                 alt={product.name}
                 layout="responsive"
                 width={640}
                 height={640}
-                className='image-buug'
+                className="image-buug"
               />
             </Grid>
             <Grid md={4} xs={12}>
@@ -92,7 +96,7 @@ export default function ProductScreen(props) {
                 </ListItem>
                 <ListItem>Author: {product.Author}</ListItem>
                 <ListItem>Category: {product.category}</ListItem>
-                
+
                 <ListItem>
                   <Rating value={product.rating} readOnly></Rating>
                   <Typography sx={classes.smallText}>
@@ -292,6 +296,7 @@ export default function ProductScreen(props) {
               </div>
             </div> */}
           </Grid>
+
           {/* <Grid item md={3} xs={12}>
                   <Card>
                     <List>
@@ -341,7 +346,7 @@ export default function ProductScreen(props) {
               </Grid>
             ))}
           </Grid> */}
-          <Hoos />
+          {/* <Hoos /> */}
         </Box>
       )}
     </Layout>

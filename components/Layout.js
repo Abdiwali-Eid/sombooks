@@ -117,8 +117,10 @@ export default function Layout({ title, description, children }) {
     };
     fetchCategories();
   }, [enqueueSnackbar]);
+  // const isTablet=@media screen and (min-width: 800px)and (max-width: 1124px)
 
-  const isDesktop = useMediaQuery('(min-width:600px)');
+  const isDesktop = useMediaQuery('(min-width:1100px)');
+  
 
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {

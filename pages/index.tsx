@@ -76,8 +76,8 @@ export default function Home() {
     fetchData();
   }, []);
 
-  const isDesktop = useMediaQuery('(min-width:600px)');
-
+  const isDesktop = useMediaQuery('(min-width:900px)');
+  const istablet = useMediaQuery('(max-width:1000px)');
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {
     setQuery(e.target.value);
@@ -94,93 +94,95 @@ export default function Home() {
         <Alert variant="danger">{error}</Alert>
       ) : (
         <>
-        <div className='Content'>
-          <Grid
-            className="nud"
-            style={
-              {
-                // backgroundColor: 'white',
-                // width: '100vw',
-                // backgroundColor:'gold'
+          <div className="Content">
+            <Grid
+              className="nud"
+              style={
+                {
+                  // backgroundColor: 'white',
+                  // width: '100vw',
+                  // backgroundColor:'gold'
+                }
               }
-            }
-          >
-            <div className="midig">
-              {/* Read PDF Books <br /> Online<br/>  <span className='sixid'>
+            >
+              <div className="midig">
+                {/* Read PDF Books <br /> Online<br/>  <span className='sixid'>
                 start your learning journary by browsing millions of <br />
                 books from our library */}
-              <span className="ciwan">
-                Download{' '}
-                <span style={{ color: 'rgb(85, 128, 170)' }}>PDF Books</span>
-                <br /> Online{' '}
-              </span>
-              <br />
-              start your learning journary by browsing Hundreds of books from
-              our library
-              <br />
-              <button
-                className="button-5"
-                role="button"
-                onClick={submitHandler}
-              >
-                See All books
-              </button>
-              {/* <p> </p> */}
-            </div>
-            <div className="image-div">
-              <img
-                src="https://hostacmee.space/demo/bookchoix/wp-content/uploads/revslider/slider-1/girl-reading-books-online.png"
-                alt=""
-                // width={'660px'}
-                className="images"
-              />
-            </div>
-          </Grid>
-          <div className="nuuro">
-            <Grid  className='popular'>
-              <b style={{ fontSize: '20px' }}>Popular Books</b>
+                <span className="ciwan">
+                  Download{' '}
+                  <span style={{ color: 'rgb(85, 128, 170)' }}>PDF Books</span>
+                  <br /> Online{' '}
+                </span>
+                <br />
+                start your learning journary by browsing Hundreds of books from
+                our library
+                <br />
+                <button
+                  className="button-5"
+                  role="button"
+                  onClick={submitHandler}
+                >
+                  See All books
+                </button>
+                {/* <p> </p> */}
+              </div>
+              <div className="image-div">
+                <img
+                  src="https://hostacmee.space/demo/bookchoix/wp-content/uploads/revslider/slider-1/girl-reading-books-online.png"
+                  alt=""
+                  // width={'660px'}
+                  className="images"
+                />
+              </div>
             </Grid>
-            <br />
-            <div style={{ display: 'flex' }}>
-              <Grid sx={isDesktop ? classes.visible : classes.hidden}>
-                <Kor />
+            <div className="nuuro">
+              <Grid className="popular">
+                <b style={{ fontSize: '20px' }}>Popular Books</b>
               </Grid>
-              <div className="bordere"> </div>
+              <br />
+              <div style={{ display: 'flex' }}>
+                <Grid sx={isDesktop ? classes.visible : classes.hidden}>
+                  <Kor />
+                </Grid>
+                <div className="bordere"> </div>
 
-              <Grid sx={isDesktop ? classes.visible : classes.hidden}>
-                <Grid
-                  container
-                  spacing={4}
-                  className="caymis"
-                  style={{ paddingRight: '20px' }}
-                >
-                  {products.map((product) => (
-                    <Grid item md={3} key={product.slug} className="caymis2">
-                      <ProductItem product={product}></ProductItem>
-                    </Grid>
-                  ))}
+                <Grid sx={isDesktop ? classes.visible : classes.hidden}>
+                  <Grid
+                    container
+                    spacing={4}
+                    className="caymis"
+                    style={{ paddingRight: '20px' }}
+                  >
+                    {products.map((product) => (
+                      <Grid item md={3} key={product.slug} className="caymis2">
+                        <ProductItem product={product}></ProductItem>
+                      </Grid>
+                    ))}
+                  </Grid>
                 </Grid>
-              </Grid>
-              <Grid sx={isDesktop ? classes.hidden : classes.visible}>
-                <Grid
-                  container
-                  spacing={4}
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
-                    paddingRight: '20px',
-                  }}
-                  className="tablet"
-                >
-                  {products.map((product) => (
-                    <Grid item  md={3}  key={product.slug}>
-                      <ProductItem product={product}></ProductItem>
-                    </Grid>
-                  ))}
+            
+
+                <Grid sx={isDesktop ? classes.hidden : classes.visible}>
+                  <Grid
+                    container
+                    spacing={4}
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: '1fr 1fr',
+                      paddingRight: '20px',
+                    }}
+                    className="tablet"
+                  >
+                    {products.map((product) => (
+                      <Grid item md={3} key={product.slug}>
+                        <ProductItem product={product}></ProductItem>
+                      </Grid>
+                    ))}
+                  </Grid>
                 </Grid>
-              </Grid>
+              </div>
             </div>
-          </div>
           </div>
         </>
       )}

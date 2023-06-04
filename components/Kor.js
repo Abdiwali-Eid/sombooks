@@ -57,7 +57,7 @@ const Kor = () => {
     };
     fetchCategories();
   }, [enqueueSnackbar]);
-  const isDesktop = useMediaQuery('(min-width:600px)');
+  const isDesktop = useMediaQuery('(min-width:800px)');
 
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {
