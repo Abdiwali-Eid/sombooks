@@ -64,8 +64,8 @@ export default function Layout({ title, description, children }) {
       },
     },
     palette: {
-      mode: 'light',
-      mode: darkMode ? 'dark' : 'light',
+      // mode: 'light',
+      // mode: darkMode ? 'dark' : 'light',
       primary: {
         main: 'rgb(120, 176, 232)',
       },
@@ -74,11 +74,11 @@ export default function Layout({ title, description, children }) {
       },
     },
   });
-  const darkModeChangeHandler = () => {
-    dispatch({ type: darkMode ? 'DARK_MODE_OFF' : 'DARK_MODE_ON' });
-    const newDarkMode = !darkMode;
-    jsCookie.set('darkMode', newDarkMode ? 'ON' : 'OFF');
-  };
+  // const darkModeChangeHandler = () => {
+  //   dispatch({ type: darkMode ? 'DARK_MODE_OFF' : 'DARK_MODE_ON' });
+  //   const newDarkMode = !darkMode;
+  //   jsCookie.set('darkMode', newDarkMode ? 'ON' : 'OFF');
+  // };
   const [anchorEl, setAnchorEl] = useState(null);
   const loginMenuCloseHandler = (e, redirect) => {
     setAnchorEl(null);
