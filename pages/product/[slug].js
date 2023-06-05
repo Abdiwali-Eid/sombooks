@@ -72,7 +72,7 @@ export default function ProductScreen(props) {
           <Box sx={classes.section}>
             <NextLink href="/" passHref>
               <Link>
-                <Typography>back to result</Typography>
+                <Typography>Dib u noqo</Typography>
               </Link>
             </NextLink>
           </Box>
@@ -94,7 +94,7 @@ export default function ProductScreen(props) {
                     {product.name}
                   </Typography>
                 </ListItem>
-                <ListItem>Author: {product.Author}</ListItem>
+                <ListItem>Qoraaga: {product.Author}</ListItem>
                 <ListItem>Category: {product.category}</ListItem>
 
                 <ListItem>
