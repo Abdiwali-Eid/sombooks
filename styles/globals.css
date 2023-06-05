@@ -28,6 +28,7 @@ a {
   padding-top: 90px;
   font-size: 48.2px;
   font-weight: bold;
+  padding-right: 6px;
 }
 .images {
   width: 660px;
@@ -241,7 +242,17 @@ main .nud {
 .lax {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
-
+@media screen and (max-width: 900px) and (min-width: 800px) {
+  .afdalu {
+    margin-left: 70px;
+  }
+  .popular {
+    padding-left: 5px;
+  }
+  .bordere {
+    visibility: hidden;
+  }
+}
 @media screen and (max-width: 800px) {
   main .nud {
     padding-left: 6px;
@@ -249,6 +260,7 @@ main .nud {
     flex-direction: column;
     /* background-color:red; */
   }
+
   .inputbasekayga {
     width: 260px;
     margin-right: 80px;
@@ -321,7 +333,11 @@ main .nud {
     /* background-color: red; */
   }
 }
-@media screen and (max-width: 1000px) and (min-width: 800px) {
+/* @media screen and (max-width: 1000px) and (min-width: 800px) {
+
+} */
+
+@media screen and (max-width: 1100px) and (min-width: 800px) {
   main .nud {
     padding-left: 86px;
     display: flex;
@@ -354,12 +370,30 @@ main .nud {
     display: flex;
     justify-content: flex-end;
   }
+  .menuicons {
+    visibility: visible;
+  }
+  .bordere {
+    visibility: hidden;
+  }
+  /* .popular {
+    padding-left: 5px;
+  } */
 }
 
 @media screen and (max-width: 800px) and (min-width: 600px) {
   .inputbasekayga {
     width: 260px;
     margin-right: 300px;
+  }
+  .afdalu {
+    margin-left: 70px;
+  }
+  .popular {
+    padding-left: 5px;
+  }
+  .bordere {
+    visibility: hidden;
   }
   .searchkayga {
     background-color: gray;
@@ -382,21 +416,36 @@ main .nud {
 
     /* margin-left: 30px; */
   }
+  .menuicons {
+    visibility: visible;
+  }
 }
 @media screen and (max-width: 600px) {
-  .nud {
+  /* .nud {
     background-color: red;
-  }
+  } */
   .midig {
-    padding-left: 50px;
+    padding-left: 30px;
   }
   .ciwan {
-    font-size: 40px;
+    font-size: 35px;
   }
   .image-div img {
     width: 330px;
-    margin-left: 90px;
+    margin-left: 40px;
 
     /* margin-left: 30px; */
+  }
+  .inputbasekayga {
+    width: 260px;
+    margin-right: 80px;
+  }
+
+  .searchkayga {
+    background-color: gray;
+    width: 390px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-end;
   }
 }

@@ -77,7 +77,7 @@ export default function Home() {
   }, []);
 
   const isDesktop = useMediaQuery('(min-width:900px)');
-  const istablet = useMediaQuery('(max-width:1000px)');
+  const istablet = useMediaQuery('(min-width:1000px)');
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {
     setQuery(e.target.value);
@@ -109,11 +109,24 @@ export default function Home() {
                 {/* Read PDF Books <br /> Online<br/>  <span className='sixid'>
                 start your learning journary by browsing millions of <br />
                 books from our library */}
-                <span className="ciwan">
-                  Download{' '}
-                  <span style={{ color: 'rgb(85, 128, 170)' }}>PDF Books</span>
-                  <br /> Online{' '}
-                </span>
+                <Grid sx={isDesktop ? classes.visible : classes.hidden}>
+                  <span className="ciwan">
+                    Download{' '}
+                    <span style={{ color: 'rgb(85, 128, 170)' }}>
+                      PDF Books
+                    </span>
+                    <br /> Online{' '}
+                  </span>
+                </Grid>
+                <Grid sx={isDesktop ? classes.hidden : classes.visible}>
+                  <span className="ciwan">
+                    Download &nbsp;
+                    <span style={{ color: 'rgb(85, 128, 170)' }}>
+                      PDF Books &nbsp;
+                    </span>
+                    Online
+                  </span>
+                </Grid>
                 <br />
                 start your learning journary by browsing Hundreds of books from
                 our library
@@ -141,13 +154,13 @@ export default function Home() {
                 <b style={{ fontSize: '20px' }}>Popular Books</b>
               </Grid>
               <br />
-              <div style={{ display: 'flex' }}>
+              <div style={{ display: 'flex' }} className='afdalu'>
                 <Grid sx={isDesktop ? classes.visible : classes.hidden}>
                   <Kor />
                 </Grid>
                 <div className="bordere"> </div>
 
-                <Grid sx={isDesktop ? classes.visible : classes.hidden}>
+                <Grid sx={isDesktop ? classes.visible : classes.hidden} className='Akh'>
                   <Grid
                     container
                     spacing={4}
@@ -161,7 +174,6 @@ export default function Home() {
                     ))}
                   </Grid>
                 </Grid>
-            
 
                 <Grid sx={isDesktop ? classes.hidden : classes.visible}>
                   <Grid
@@ -181,6 +193,8 @@ export default function Home() {
                     ))}
                   </Grid>
                 </Grid>
+
+                
               </div>
             </div>
           </div>

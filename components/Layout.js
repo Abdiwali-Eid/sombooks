@@ -67,7 +67,7 @@ export default function Layout({ title, description, children }) {
       mode: 'light',
       mode: darkMode ? 'dark' : 'light',
       primary: {
-        main: '#f0c000',
+        main: 'rgb(120, 176, 232)',
       },
       secondary: {
         main: '#208080',
@@ -120,7 +120,6 @@ export default function Layout({ title, description, children }) {
   // const isTablet=@media screen and (min-width: 800px)and (max-width: 1124px)
 
   const isDesktop = useMediaQuery('(min-width:1100px)');
-  
 
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {
@@ -251,11 +250,11 @@ export default function Layout({ title, description, children }) {
               </form>
             </Box>
             <Box>
-              <Switch
+              {/* <Switch
                 color="success"
                 checked={darkMode}
                 onChange={darkModeChangeHandler}
-              ></Switch>
+              ></Switch> */}
               {userInfo ? (
                 <>
                   <Button
