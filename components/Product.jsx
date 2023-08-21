@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 import { urlForThumbnail } from '../utils/image';
-import product from './/../amazon-sanity/schemas/product';
+import bugaag from './/../amazon-sanity/schemas/bugaag';
 
 const Product = ({
-  product: {
+  bugaag: {
     name,
     price,
     Author,
@@ -20,7 +20,7 @@ const Product = ({
 }) => {
   return (
     <div>
-      <Link href={`/product/${slug.current}`}>
+      <Link href={`/bugaag/${slug.current}`}>
         <div className="product-card">
           <img
             src={urlForThumbnail(image && image[0])}

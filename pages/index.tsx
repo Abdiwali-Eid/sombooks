@@ -62,7 +62,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const products = await client.fetch(` *[_type == "product"]`);
+        const products = await client.fetch(` *[_type == "bugaag"]`);
         setState({ ...state, products, loading: false });
       } catch (err) {
         if (err instanceof Error) {
@@ -154,22 +154,25 @@ export default function Home() {
                 <b style={{ fontSize: '20px' }}>Popular Books</b>
               </Grid>
               <br />
-              <div style={{ display: 'flex' }} className='afdalu'>
+              <div style={{ display: 'flex' }} className="afdalu">
                 <Grid sx={isDesktop ? classes.visible : classes.hidden}>
                   <Kor />
                 </Grid>
                 <div className="bordere"> </div>
 
-                <Grid sx={isDesktop ? classes.visible : classes.hidden} className='Akh'>
+                <Grid
+                  sx={isDesktop ? classes.visible : classes.hidden}
+                  className="Akh"
+                >
                   <Grid
                     container
                     spacing={4}
                     className="caymis"
                     style={{ paddingRight: '20px' }}
                   >
-                    {products.map((product) => (
-                      <Grid item md={3} key={product.slug} className="caymis2">
-                        <ProductItem product={product}></ProductItem>
+                    {products.map((bugaag) => (
+                      <Grid item md={3} key={bugaag.slug} className="caymis2">
+                        <ProductItem bugaag={bugaag}></ProductItem>
                       </Grid>
                     ))}
                   </Grid>
@@ -186,15 +189,13 @@ export default function Home() {
                     }}
                     className="tablet"
                   >
-                    {products.map((product) => (
-                      <Grid item md={3} key={product.slug}>
-                        <ProductItem product={product}></ProductItem>
+                    {products.map((bugaag) => (
+                      <Grid item md={3} key={bugaag.slug}>
+                        <ProductItem bugaag={bugaag}></ProductItem>
                       </Grid>
                     ))}
                   </Grid>
                 </Grid>
-
-                
               </div>
             </div>
           </div>

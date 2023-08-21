@@ -12,23 +12,19 @@ import NextLink from 'next/link';
 import React from 'react';
 import { urlForThumbnail } from '../utils/image';
 
-export default function ProductItem({ product }) {
+export default function ProductItem({ bugaag }) {
   return (
     <Card>
-      <NextLink
-        href={`/product/${product.slug.current}`}
-        passHref
-        
-      >
+      <NextLink href={`/bugaag/${bugaag.slug.current}`} passHref>
         <CardActionArea>
           <CardMedia
             component="img"
-            image={urlForThumbnail(product.image)}
-            title={product.name}
+            image={urlForThumbnail(bugaag.image)}
+            title={bugaag.name}
           ></CardMedia>
           <CardContent>
-            <Typography>{product.name}</Typography>
-            <Typography className="author">{product.Author}</Typography>
+            <Typography>{bugaag.name}</Typography>
+            <Typography className="author">{bugaag.Author}</Typography>
             {/* <Typography>
               {product.rating} ({product.numReviews} reviews)
               </Typography> */}

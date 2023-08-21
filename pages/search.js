@@ -71,7 +71,7 @@ export default function SearchScreen() {
 
     const fetchData = async () => {
       try {
-        let gQuery = '*[_type == "product"';
+        let gQuery = '*[_type == "bugaag"';
         if (category !== 'all') {
           gQuery += ` && category match "${category}" `;
         }
@@ -138,10 +138,10 @@ export default function SearchScreen() {
   } = useContext(Store);
 
   const { enqueueSnackbar } = useSnackbar();
-  const addToCartHandler = async (product) => {
-    const existItem = cart.cartItems.find((x) => x._id === product._id);
+  const addToCartHandler = async (bugaag) => {
+    const existItem = cart.cartItems.find((x) => x._id === bugaag._id);
     const quantity = existItem ? existItem.quantity + 1 : 1;
-    const { data } = await axios.get(`/api/products/${product._id}`);
+    const { data } = await axios.get(`/api/products/${bugaag._id}`);
     if (data.countInStock < quantity) {
       enqueueSnackbar('Sorry. Product is out of stock', { variant: 'error' });
       return;
@@ -149,16 +149,16 @@ export default function SearchScreen() {
     dispatch({
       type: 'CART_ADD_ITEM',
       payload: {
-        _key: product._id,
-        name: product.name,
-        countInStock: product.countInStock,
-        slug: product.slug.current,
-        price: product.price,
-        image: urlForThumbnail(product.image),
+        _key: bugaag._id,
+        name: bugaag.name,
+        countInStock: bugaag.countInStock,
+        slug: bugaag.slug.current,
+        price: bugaag.price,
+        image: urlForThumbnail(bugaag.image),
         quantity,
       },
     });
-    enqueueSnackbar(`${product.name} added to the cart`, {
+    enqueueSnackbar(`${bugaag.name} added to the cart`, {
       variant: 'success',
     });
     router.push('/cart');
@@ -259,10 +259,10 @@ export default function SearchScreen() {
                   //  marginLeft:'1px'
                 }}
               >
-                {products.map((product) => (
-                  <Grid item md={10} key={product.name} sx={isDesktop ? classes.visible : classes.hidden}>
+                {products.map((bugaag) => (
+                  <Grid item md={10} key={bugaag.name} sx={isDesktop ? classes.visible : classes.hidden}>
                     <ProductItem
-                      product={product}
+                      bugaag={bugaag}
                       addToCartHandler={addToCartHandler}
                     />
                   </Grid>
@@ -316,10 +316,10 @@ export default function SearchScreen() {
             }}
             className="tablet"
           >
-            {products.map((product) => (
-              <Grid item md={3} key={product.name}>
+            {products.map((bugaag) => (
+              <Grid item md={3} key={bugaag.name}>
                 <ProductItem
-                  product={product}
+                  bugaag={bugaag}
                   // addToCartHandler={addToCartHandler}
                 />
               </Grid>

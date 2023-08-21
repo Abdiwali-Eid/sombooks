@@ -1,3 +1,3 @@
-import product from './product'
+import buugaag from './bugaag'
 import user from './user';
-export const schemaTypes = [product,user]
+export const schemaTypes = [buugaag,user]
