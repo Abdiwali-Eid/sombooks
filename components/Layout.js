@@ -30,7 +30,7 @@ import NextLink from 'next/link';
 import classes from '../utils/classes';
 import Kor from './Kor';
 import Myfooter from '../pages/footer';
-import { AiOutlineMail } from 'react-icons/ai';
+import { MdOutlineEmail } from 'react-icons/md';
 import { AiFillPhone } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
@@ -445,14 +445,13 @@ export default function Layout({ title, description, children }) {
             </div>
             <div className="contact-us">
               <h1>contact us</h1>
-              <AiOutlineMail /> sombooks@gmail.com <br />
+              <MdOutlineEmail /> som@gmail.com <br />
               <AiFillPhone /> +252 619779420
               <br />
               <br />
-              <div className='soc-icons'>
- <BsFacebook  /> <BsLinkedin /> <BsTwitter />
+              <div className="soc-icons">
+                <BsFacebook /> <BsLinkedin /> <BsTwitter />
               </div>
-             
             </div>
           </div>
           <Typography>All rights reserved. SomBooks.</Typography>
