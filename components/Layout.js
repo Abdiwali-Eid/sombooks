@@ -29,7 +29,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import classes from '../utils/classes';
 import Kor from './Kor';
-import Myfooter from '../pages/footer';
+// import Myfooter from '../pages/footer';
 import { MdOutlineEmail } from 'react-icons/md';
 import { AiFillPhone } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
@@ -42,7 +42,7 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 export default function Layout({ title, description, children }) {
   const router = useRouter();
@@ -388,73 +388,14 @@ export default function Layout({ title, description, children }) {
           {children}
           {/* <span style={{backgroundColor:'red'}}>runta</span> */}
         </Container>
+
         <Box
           component="footer"
           sx={classes.footer}
           style={{ backgroundColor: 'rgb(120, 176, 232)' }}
         >
-          <div className="igahabee">
-            <div className="company">
-              <h1>SomBooks</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
-                do eiusmod tempor incididuntut consec tetur adipisicing
-                elit,Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-            <div className="usefullinks">
-              <h1>Quick menus</h1>
-              <List className="uselinks">
-                <ListItem onClick={sidebarCloseHandler}>
-                  <NextLink href="/">
-                    <Link style={{ color: 'black' }}>
-                      Home
-                      <br />
-                    </Link>
-                  </NextLink>
-                </ListItem>
-                <ListItem onClick={sidebarCloseHandler}>
-                  <NextLink href="" onClick={submitHandler}>
-                    <Link style={{ color: 'black' }}>All books</Link>
-                  </NextLink>
-                </ListItem>
-                <ListItem>
-                  <NextLink href="/About">
-                    <Link style={{ color: 'black' }}>About</Link>
-                  </NextLink>
-                </ListItem>
-                {categories.map((category) => (
-                  <NextLink
-                    key={category}
-                    href={`/search?category=${category}`}
-                    passHref
-                  >
-                    <ListItem
-                      button
-                      component="a"
-                      onClick={sidebarCloseHandler}
-                    >
-                      {/* <NextLink href="" onClick={submitHandler}>
-                  <Link style={{ color: 'black' }}>All books</Link>
-                </NextLink> */}
-                      <ListItemText primary={category}></ListItemText>
-                    </ListItem>
-                  </NextLink>
-                ))}
-              </List>
-            </div>
-            <div className="contact-us">
-              <h1>contact us</h1>
-              <MdOutlineEmail /> som@gmail.com <br />
-              <AiFillPhone /> +252 619779420
-              <br />
-              <br />
-              <div className="soc-icons">
-                <BsFacebook /> <BsLinkedin /> <BsTwitter />
-              </div>
-            </div>
-          </div>
-          <Typography>All rights reserved. SomBooks.</Typography>
+          <Typography>All rights reserved. SomBooks.</Typography> <BsFacebook />{' '}
+          <BsLinkedin /> <BsTwitter />
         </Box>
         {/* <Footer/> */}
       </ThemeProvider>

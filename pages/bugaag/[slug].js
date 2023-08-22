@@ -103,6 +103,7 @@ export default function ProductScreen(props) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="buy-now"
+                        
                       >
                         Download
                       </a>

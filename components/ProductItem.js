@@ -23,7 +23,7 @@ export default function ProductItem({ bugaag }) {
             title={bugaag.name}
           ></CardMedia>
           <CardContent>
-            <Typography>{bugaag.name}</Typography>
+            <Typography className="namecol">{bugaag.name}</Typography>
             <Typography className="author">{bugaag.Author}</Typography>
             {/* <Typography>
               {product.rating} ({product.numReviews} reviews)
