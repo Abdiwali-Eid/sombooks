@@ -29,7 +29,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import classes from '../utils/classes';
 import Kor from './Kor';
-// import Myfooter from '../pages/footer';
+
 import { MdOutlineEmail } from 'react-icons/md';
 import { AiFillPhone } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
@@ -42,7 +42,7 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
-// import Footer from './Footer';
+
 
 export default function Layout({ title, description, children }) {
   const router = useRouter();
@@ -397,7 +397,7 @@ export default function Layout({ title, description, children }) {
           <Typography>All rights reserved. SomBooks.</Typography> <BsFacebook />{' '}
           <BsLinkedin /> <BsTwitter />
         </Box>
-        {/* <Footer/> */}
+   
       </ThemeProvider>
     </>
   );
