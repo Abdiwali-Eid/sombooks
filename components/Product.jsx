@@ -14,8 +14,8 @@ const Product = ({
     brand,
     category,
     rating,
-    numReviews,
-    countInStock,
+    pages,
+    featured,
   },
 }) => {
   return (
@@ -30,7 +30,7 @@ const Product = ({
             className="product-image"
           />
           <p>{name}</p>
-          <p className="author" >{Author}</p>
+          <p className="author">{Author}</p>
         </div>
       </Link>
     </div>

@@ -57,14 +57,14 @@ export default {
     },
 
     {
-      name: 'numReviews',
-      title: 'NumReviews',
+      name: 'pages',
+      title: 'Pages',
       type: 'number',
     },
     {
-      name: 'countInStock',
-      title: 'CountInStock',
-      type: 'number',
+      name: 'featured',
+      title: 'Featured',
+      type: 'string',
     },
   ],
 }

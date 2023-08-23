@@ -139,6 +139,15 @@ export default function Layout({ title, description, children }) {
       <Head>
         <title>{title ? `${title} - Som Books` : 'Som Books'}</title>
         {description && <meta name="description" content={description}></meta>}
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-37C2HE31R3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-37C2HE31R3');
+</script>
       </Head>
       <ThemeProvider theme={theme} className="fak">
         <CssBaseline />

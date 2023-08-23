@@ -62,7 +62,9 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const products = await client.fetch(` *[_type == "bugaag"]`);
+        const products = await client.fetch(
+          ` *[_type == "bugaag" && featured == "Popular"]`
+        );
         setState({ ...state, products, loading: false });
       } catch (err) {
         if (err instanceof Error) {
