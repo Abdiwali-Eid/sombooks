@@ -43,6 +43,7 @@ import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
 
+
 export default function Layout({ title, description, children }) {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
@@ -396,6 +397,7 @@ export default function Layout({ title, description, children }) {
           <Typography>All rights reserved. SomBooks.</Typography> <BsFacebook />{' '}
           <BsLinkedin /> <BsTwitter />
         </Box>
+   
       </ThemeProvider>
     </>
   );
