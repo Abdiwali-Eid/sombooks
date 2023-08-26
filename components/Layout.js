@@ -42,8 +42,9 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
-import TagManager from 'react-gtm-module';
 import Script from 'next/script';
+// import TagManager from 'react-gtm-module';
+// import Script from 'next/script';
 
 export default function Layout({ title, description, children }) {
   const router = useRouter();
@@ -141,18 +142,7 @@ export default function Layout({ title, description, children }) {
         <title>{title ? `${title} - Som Books` : 'Som Books'}</title>
         {description && <meta name="description" content={description}></meta>}
 
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-KBJ90MCKSS"
-        ></script>
-        <script id="google-analytics" strategy="afterInteractive">
-          {` 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KBJ90MCKSS');
-    `}
-        </script>
+     
       </Head>
       <ThemeProvider theme={theme} className="fak">
         <CssBaseline />
