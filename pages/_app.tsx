@@ -11,14 +11,14 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-Y83VNF8FW7"
+        src="https://www.googletagmanager.com/gtag/js?id=G-5N14NHXLTE"
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-Y83VNF8FW7');
+                    gtag('config', 'G-5N14NHXLTE');
                 `}
       </Script>
       <Component {...pageProps} />
