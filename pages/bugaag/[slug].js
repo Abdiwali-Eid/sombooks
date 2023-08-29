@@ -136,7 +136,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'SOO DOOG' ? (
+                    ) : bugaag.name === 'Soodoog' ? (
                       <a
                         href="/files/Soodoog-garanuug.com.pdf"
                         alt="alt text"
@@ -446,9 +446,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Aabe hodan ah aabe saboool ah' ? (
+                    ) : bugaag.name === 'Axkaamta xajka' ? (
                       <a
-                        href="/files/Aabe Hodan ah Aabe Sabool ah. Dr. Jama Sahal (1).pdf"
+                        href="/files/"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -456,9 +456,209 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Aabe hodan ah aabe saboool ah' ? (
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
                       <a
-                        href="/files/Aabe Hodan ah Aabe Sabool ah. Dr. Jama Sahal (1).pdf"
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Maaraynta waqtiga' ? (
+                      <a
+                        href="/files/maareynta waqtiga.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Daawada murugada' ? (
+                      <a
+                        href="/files/Daawada Murugada.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Qaddarta Alle' ? (
+                      <a
+                        href="/files/Qaddarta Alle-h.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Naxwaha Afsoomaaliga' ? (
+                      <a
+                        href="/files/Barashada naxwaha afsoomaaliga KAYDBOOKS .pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Maxaan u dooranay dariiqa faqriga' ? (
+                      <a
+                        href="/files/maxaan u udoorannay dariiqa faqriga -KAYDBOOKS .pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Fakar oo hodan noqo' ? (
+                      <a
+                        href="/files/Fakar oo Hodan-noqo.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Guure' ? (
+                      <a
+                        href="/files/Guure..pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Naxwaha Carabiga oo kooban' ? (
+                      <a
+                        href="/files/so_The_rules_of_the_arabic_language.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Gabayadii Sayidka' ? (
+                      <a
+                        href="/files/Diiwaanka_Gabayadii_Sayid_Maxamed_Cabdulle_Xasan (1).pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                      <a
+                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
