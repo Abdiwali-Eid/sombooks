@@ -103,7 +103,6 @@ export default function ProductScreen(props) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="buy-now"
-                        
                       >
                         Download
                       </a>
@@ -257,7 +256,217 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Sirta iyo Axkaamta soonka' ? (
+                    ) : bugaag.name === 'Aabe hodan ah aabe saboool ah' ? (
+                      <a
+                        href="/files/Aabe Hodan ah Aabe Sabool ah. Dr. Jama Sahal (1).pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Tafsiirka Quraanka' ? (
+                      <a
+                        href="/files/so_01_Quraanka_Kariimka.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Riyaadu Saalixiin' ? (
+                      <a
+                        href="/files/Riyaadu saalixiin.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === '10ka fure ee guusha' ? (
+                      <a
+                        href="/files/Tobanka fure ee guusha. -.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Adeegto' ? (
+                      <a
+                        href="/files/Adeegto.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Dal dad waayay' ? (
+                      <a
+                        href="/files/Dal Dad Waayey iyo Duni Damiir Beeshay!.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Afartan Xadiis' ? (
+                      <a
+                        href="/files/so_Afartan_Xadiis.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === '100 Sunno' ? (
+                      <a
+                        href="/files/1000 sunno habeenkii iyo maalinkii.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Aamina Almufti' ? (
+                      <a
+                        href="/files/Amiina almufti.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Antikiriistoos' ? (
+                      <a
+                        href="/files/antikiriistoos-pdf.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Dhabannahays' ? (
+                      <a
+                        href="/files/Dhabannahays-garanuug.com (2).pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Taariikhda Daraawiishta' ? (
+                      <a
+                        href="/files/Taariikhdii Daraawiishta iyo Sayid Maxamed (1).pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Guri waa haween' ? (
+                      <a
+                        href="/files/Guri waa haween. -.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Dikshinariga cusub' ? (
+                      <a
+                        href="/files/Dikshaneeriga Cusub Ee Ardayda  -.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Xaaraan la fududaystay' ? (
+                      <a
+                        href="/files/so_Prohibitions_that_are_taken_too_lightly.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Hab qoraalka sheekada' ? (
+                      <a
+                        href="/files/habqoraalka sheekada..pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Axkaamta Tajwiidka' ? (
+                      <a
+                        href="/files/Axkaamta tajwiidka.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Jidka Jannada' ? (
+                      <a
+                        href="/files/JIDKII JANNADA-5.pdf 2022.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Salaaddi Nabiga' ? (
+                      <a
+                        href="/files/Siduu nabigu scw u tukan jiray.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Aabe hodan ah aabe saboool ah' ? (
+                      <a
+                        href="/files/Aabe Hodan ah Aabe Sabool ah. Dr. Jama Sahal (1).pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Aabe hodan ah aabe saboool ah' ? (
+                      <a
+                        href="/files/Aabe Hodan ah Aabe Sabool ah. Dr. Jama Sahal (1).pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="buy-now"
+                      >
+                        Download
+                      </a>
+                    ) : bugaag.name === 'Sirta soonka' ? (
                       <a
                         href="/files/Sirta iyo Axkaamta Soonka-QABYO (1).pdf"
                         alt="alt text"
