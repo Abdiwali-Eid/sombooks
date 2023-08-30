@@ -448,7 +448,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Axkaamta xajka' ? (
                       <a
-                        href="/files/"
+                        href="/files/so_Axkaamta_xajka_iyo_cumrada.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
