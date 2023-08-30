@@ -33,6 +33,7 @@ import classes from '../utils/classes';
 import imsgg from '../public/reading-books.png';
 import Hoos from '../components/Hoos';
 import Kormobil from '../components/Kormobil';
+import NextLink from 'next/link';
 
 export default function Home() {
   const router = useRouter();
@@ -154,8 +155,26 @@ export default function Home() {
               </div>
             </Grid>
             <div className="nuuro">
-              <Grid className="popular">
-                <b style={{ fontSize: '20px' }}>Popular Books</b>
+              <Grid
+                className="popular"
+                style={{ display: 'flex', justifyContent: 'space-between' }}
+              >
+                <Grid>
+                  <b style={{ fontSize: '20px' }}>Popular Books</b>
+                </Grid>
+
+                <Grid>
+                  <NextLink href="" onClick={submitHandler}>
+                    <Link
+                      style={{
+                        color: 'rgb(85, 128, 170)',
+                        paddingRight: '15px',
+                      }}
+                    >
+                      Arag Dhammaan
+                    </Link>
+                  </NextLink>
+                </Grid>
               </Grid>
               <br />
               <div style={{ display: 'flex' }} className="afdalu">
