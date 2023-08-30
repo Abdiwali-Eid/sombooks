@@ -8,6 +8,7 @@ import {
   MenuItem,
   Rating,
   Select,
+  Link,
   Typography,
   useMediaQuery,
 } from '@mui/material';
@@ -15,8 +16,10 @@ import { Box } from '@mui/system';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useSnackbar } from 'notistack';
+import NextLink from 'next/link';
 import React, { useContext, useEffect, useState } from 'react';
 import Layout from '../components/Layout';
+
 import ProductItem from '../components/ProductItem';
 import classes from '../utils/classes';
 import client from '../utils/client';
@@ -169,6 +172,13 @@ export default function SearchScreen() {
     <Layout title="search">
       <Grid sx={classes.section} container spacing={2}>
         <Grid item md={3}>
+          <Box sx={classes.section}>
+            <NextLink href="/" passHref>
+              <Link>
+                <Typography style={{paddingLeft:'5px'}}>Dib u noqo</Typography>
+              </Link>
+            </NextLink>
+          </Box>
           <List>
             <ListItem>
               <Box sx={classes.fullWidth}>
@@ -216,8 +226,7 @@ export default function SearchScreen() {
         <Grid item md={9}>
           <Grid container justifyContent="space-between" alignItems="center">
             <Grid item>
-              {products && products.length !== 0 ? products.length : 'No'}{' '}
-              Results
+              {products && products.length !== 0 ? products.length : 'No'} Buug
               {query !== 'all' && query !== '' && ' : ' + query}
               {price !== 'all' && ' : Price ' + price}
               {rating !== 'all' && ' : Rating ' + rating + ' & up'}
@@ -250,7 +259,6 @@ export default function SearchScreen() {
               <Grid
                 container
                 spacing={3}
-                
                 style={{
                   display: 'grid',
                   gridTemplateColumns: '1fr 1fr 1fr',
@@ -260,7 +268,12 @@ export default function SearchScreen() {
                 }}
               >
                 {products.map((bugaag) => (
-                  <Grid item md={10} key={bugaag.name} sx={isDesktop ? classes.visible : classes.hidden}>
+                  <Grid
+                    item
+                    md={10}
+                    key={bugaag.name}
+                    sx={isDesktop ? classes.visible : classes.hidden}
+                  >
                     <ProductItem
                       bugaag={bugaag}
                       addToCartHandler={addToCartHandler}
