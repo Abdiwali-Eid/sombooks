@@ -134,6 +134,20 @@ a {
 .namecol {
   color: #232b2b;
 }
+.singlecat {
+  background-color: rgb(85, 128, 170);
+  height: 40px;
+  /* align-items: center; */
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 7px;
+  border-radius: 8px;
+  color: white;
+  font-size: 7rem;
+  font-family: 'Poppins', sans-serif;
+  /* font-weight: 800; */
+  font-weight: bold;
+}
 .button-5 {
   align-items: center;
   background-clip: padding-box;

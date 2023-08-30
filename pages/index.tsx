@@ -32,6 +32,7 @@ import Dheex from '../asset/reading-books.png';
 import classes from '../utils/classes';
 import imsgg from '../public/reading-books.png';
 import Hoos from '../components/Hoos';
+import Kormobil from '../components/Kormobil';
 
 export default function Home() {
   const router = useRouter();
@@ -79,6 +80,7 @@ export default function Home() {
   }, []);
 
   const isDesktop = useMediaQuery('(min-width:900px)');
+  const isDesktops = useMediaQuery('(min-width:700px)');
   const istablet = useMediaQuery('(min-width:1000px)');
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {
@@ -199,6 +201,9 @@ export default function Home() {
                   </Grid>
                 </Grid>
               </div>
+              <Grid sx={isDesktops ? classes.hidden : classes.visible}>
+                <Kormobil />
+              </Grid>
             </div>
           </div>
         </>
