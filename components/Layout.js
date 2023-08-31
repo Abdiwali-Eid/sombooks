@@ -141,8 +141,10 @@ export default function Layout({ title, description, children }) {
       <Head>
         <title>{title ? `${title} - Som Books` : 'Som Books'}</title>
         {description && <meta name="description" content={description}></meta>}
-
-     
+        <meta
+          name="google-site-verification"
+          content="yrb_uJ-LQ_JxLLRmEgOW_Dp2cFsCGttQUvX4_QgETJ8"
+        />
       </Head>
       <ThemeProvider theme={theme} className="fak">
         <CssBaseline />
@@ -398,8 +400,8 @@ export default function Layout({ title, description, children }) {
           sx={classes.footer}
           style={{ backgroundColor: 'rgb(120, 176, 232)' }}
         >
-          <Typography>Xuquuqdu way ilaalshan tahay. Buugaag.</Typography> <BsFacebook />{' '}
-          <BsLinkedin /> <BsTwitter />
+          <Typography>Xuquuqdu way ilaalshan tahay. Buugaag.</Typography>{' '}
+          <BsFacebook /> <BsLinkedin /> <BsTwitter />
         </Box>
       </ThemeProvider>
     </>
