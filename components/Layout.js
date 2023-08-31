@@ -398,7 +398,7 @@ export default function Layout({ title, description, children }) {
           sx={classes.footer}
           style={{ backgroundColor: 'rgb(120, 176, 232)' }}
         >
-          <Typography>All rights reserved. SomBooks.</Typography> <BsFacebook />{' '}
+          <Typography>Xuquuqdu way ilaalshan tahay. Buugaag.</Typography> <BsFacebook />{' '}
           <BsLinkedin /> <BsTwitter />
         </Box>
       </ThemeProvider>

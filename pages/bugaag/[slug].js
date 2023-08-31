@@ -566,9 +566,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === 'Indhasarcaad' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/indhasarcaad.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
