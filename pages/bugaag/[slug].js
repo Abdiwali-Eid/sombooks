@@ -576,9 +576,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === 'Faaruuq' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/Al-Faaruuq-sannadihii-hore (1).pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -586,9 +586,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === 'Dab iyo Dhagax' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/DabIyoDhagax-ebyoon.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -596,9 +596,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === 'Hawaale Warran' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/Hawaale Warran.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -606,9 +606,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === 'Halgan iyo Hagardaamo' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/halgan iyo hagardaamo (1).pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
