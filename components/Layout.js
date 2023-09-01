@@ -139,7 +139,7 @@ export default function Layout({ title, description, children }) {
   return (
     <>
       <Head>
-        <title>{title ? `${title} - Som Books` : 'Som Books'}</title>
+        <title>{title ? `${title} - Buugaag` : 'Buugaag'}</title>
         {description && <meta name="description" content={description}></meta>}
         <meta
           name="google-site-verification"
