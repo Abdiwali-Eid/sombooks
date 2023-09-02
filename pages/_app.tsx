@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 
 import { StoreProvider } from '@/utils/Store';
+
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 
@@ -20,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta name="og:description" content="some description here" />
       <meta
         name="og:image"
-        content="https://example.com/one-place-fishing-store.jpg"
+        content="../public/reading-books.png"
       />
       <Script
         strategy="afterInteractive"

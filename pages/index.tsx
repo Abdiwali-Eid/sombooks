@@ -65,7 +65,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const products = await client.fetch(
-          ` *[_type == "bugaag" && featured == "Popular"]`
+          ` *[_type == "bugaag" && featured == "Popular" ]`
         );
         setState({ ...state, products, loading: false });
       } catch (err) {

@@ -16,6 +16,7 @@ const Product = ({
     rating,
     pages,
     featured,
+    releaseDate,
   },
 }) => {
   return (

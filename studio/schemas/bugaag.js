@@ -14,6 +14,12 @@ export default {
       type: 'number',
     },
     {
+      title: 'Release Date',
+      name: 'releaseDate',
+      type: 'date',
+    },
+
+    {
       name: 'Author',
       title: 'Author',
       type: 'string',
@@ -65,6 +71,18 @@ export default {
       name: 'featured',
       title: 'Featured',
       type: 'string',
+    },
+  ],
+  orderings: [
+    {
+      title: 'Release Date, New',
+      name: 'releaseDateDesc',
+      by: [{field: 'releaseDate', direction: 'desc'}],
+    },
+    {
+      title: 'Release Date, Old',
+      name: 'releaseDateAsc',
+      by: [{field: 'releaseDate', direction: 'asc'}],
     },
   ],
 }
