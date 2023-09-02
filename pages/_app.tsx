@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta name="og:description" content="some description here" />
       <meta
         name="og:image"
-        content="../public/reading-books.png"
+        content="../public/reading"  
       />
       <Script
         strategy="afterInteractive"
