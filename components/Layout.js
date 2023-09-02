@@ -145,6 +145,7 @@ export default function Layout({ title, description, children }) {
           name="google-site-verification"
           content="yrb_uJ-LQ_JxLLRmEgOW_Dp2cFsCGttQUvX4_QgETJ8"
         />
+         <meta property="og:image" content="https://hostacmee.space/demo/bookchoix/wp-content/uploads/revslider/slider-1/girl-reading-books-online.png" />
       </Head>
       <ThemeProvider theme={theme} className="fak">
         <CssBaseline />
