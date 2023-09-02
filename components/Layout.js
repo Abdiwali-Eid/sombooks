@@ -173,7 +173,7 @@ export default function Layout({ title, description, children }) {
                     sx={classes.brand}
                     style={{ paddingBottom: '20px' }}
                   >
-                    Sombooks
+                    Buugaag 
                   </Typography>
                 </Link>
               </NextLink>
