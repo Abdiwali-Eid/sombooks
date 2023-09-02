@@ -23,6 +23,7 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+
 import SearchIcon from '@mui/icons-material/Search';
 import CancelIcon from '@mui/icons-material/Cancel';
 import Head from 'next/head';
@@ -141,11 +142,15 @@ export default function Layout({ title, description, children }) {
       <Head>
         <title>{title ? `${title} - Buugaag` : 'Buugaag'}</title>
         {description && <meta name="description" content={description}></meta>}
+
         <meta
           name="google-site-verification"
           content="yrb_uJ-LQ_JxLLRmEgOW_Dp2cFsCGttQUvX4_QgETJ8"
         />
-         <meta property="og:image" content="https://hostacmee.space/demo/bookchoix/wp-content/uploads/revslider/slider-1/girl-reading-books-online.png" />
+        <meta
+          property="og:image"
+          content="https://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
+        />
       </Head>
       <ThemeProvider theme={theme} className="fak">
         <CssBaseline />

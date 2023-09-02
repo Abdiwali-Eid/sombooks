@@ -20,10 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta name="og:title" content="One Place Fishing" />
       <meta name="og:description" content="some description here" />
       <meta property="og:image" content="https://hostacmee.space/demo/bookchoix/wp-content/uploads/revslider/slider-1/girl-reading-books-online.png" />
-      {/* <meta
-        name="og:image"
-        content="https://hostacmee.space/demo/bookchoix/wp-content/uploads/revslider/slider-1/girl-reading-books-online.png"  
-      /> */}
+   
       <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-WPV2LN75VB"
