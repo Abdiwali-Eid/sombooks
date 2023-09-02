@@ -149,7 +149,7 @@ export default function Layout({ title, description, children }) {
         />
         <meta
           property="og:image"
-          content="https://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
+          content="https://i.ibb.co/L156pv9/studio-image.jpg"
         />
       </Head>
       <ThemeProvider theme={theme} className="fak">
